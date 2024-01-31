@@ -5,7 +5,7 @@ ul {
   .main-container {
     padding: 2rem;
     height: 100vh;
-    background-color: #1e1e1e;
+    background-color: #2f74c0;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -19,25 +19,35 @@ ul {
     align-items: center;
     width: 100%;
     margin-bottom: 23px;
-    
+    border-radius: 50px;
+    position: relative;
   }
   
   .form-input {
-    padding: 0.75rem;
+    padding: 20px;
     outline: none;
     border: 1px solid rgb(247, 247, 247);
-    width: 18rem;
+    width: 100%;
+    border-radius: 50px;
   }
+
+
   
   .form-submit-btn {
-    background-color: #666;
-    padding: 0.75rem;
-    border: 1px solid #666;
-    color: #fff;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    right: 1%;
+    border: none;
+    background-color: #2f74c0;
+    color: #fff;
+    box-shadow: 0 0 10px #000;
   }
+
+ 
   
   .course-item {
     display: flex;
@@ -62,19 +72,38 @@ ul {
   }
   
   .delete-btn {
-    padding: 0.5rem;
-    color: white;
-    background-color: #ff0000cc;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
   }
 
   .update-btn {
-    padding: 0.5rem;
-    color: white;
-    background-color: green;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
   }
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.close-modal-btn {
+  margin-top: 10px;
+}

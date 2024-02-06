@@ -1,90 +1,90 @@
-ul {
-    padding: 0;
-  }
-  
-  .main-container {
-    padding: 2rem;
-    height: 100vh;
-    background-color: #2f74c0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 23px;
-    border-radius: 50px;
-    position: relative;
-  }
-  
-  .form-input {
-    padding: 20px;
-    outline: none;
-    border: 1px solid rgb(247, 247, 247);
-    width: 100%;
-    border-radius: 50px;
-  }
+.main-container {
+  padding: 2rem;
+  height: 100vh;
+  background-color: #2f74c0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 23px;
+  border-radius: 50px;
+  position: relative;
+}
 
+.form-input {
+  padding: 20px;
+  outline: none;
+  border: 1px solid rgb(247, 247, 247);
+  width: 100%;
+  border-radius: 50px;
   
-  .form-submit-btn {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 50px;
-    position: absolute;
-    right: 1%;
-    border: none;
-    background-color: #2f74c0;
-    color: #fff;
-    box-shadow: 0 0 10px #000;
-  }
+}
 
- 
-  
-  .course-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 24rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 2px solid white;
-    margin: 1rem 0;
-    padding: 1rem;
-    font-weight: bold;
-    background-color: gold;
+.form-input:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
 
-  }
-  
-  .course-item-col-1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .delete-btn {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
+.form-submit-btn {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  position: absolute;
+  right: 1%;
+  border: none;
+  background-color: #2f74c0;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+}
 
-  .update-btn {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24rem;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #ffc966;
+}
 
+.course-item:hover  {
+  box-shadow: 0px 0px 10px #000;
+ transform: scale(1.05);
+}
+
+.course-item-col-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.update-btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 
 .modal-overlay {
   position: fixed;
@@ -99,7 +99,7 @@ ul {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #ffedcc;
   padding: 60px;
   border-radius: 8px;
 }
@@ -107,3 +107,10 @@ ul {
 .close-modal-btn {
   margin-top: 10px;
 }
+
+.drag {
+  box-shadow: 0 0 20px black;
+}
+
+
+

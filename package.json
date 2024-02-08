@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@syncfusion/ej2-react-gantt": "^24.2.4",
-    "react": "^18.2.0",
+    "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.1",
     "react-datetime": "^3.2.0",
     "react-dom": "^18.2.0",
